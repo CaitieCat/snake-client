@@ -17,6 +17,7 @@ const connect = function() {
   conn.on('connect', () => {
     console.log('Connection Succesful!');
     conn.write('Name: CAG');
+    //conn.write('Move: up');
   })
   
     return conn;
