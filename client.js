@@ -14,6 +14,10 @@ const connect = function() {
     conn.on('data', (data) => {
       console.log(data);
   })
+  conn.on('connect', () => {
+    console.log('Connection Succesful!');
+    conn.write('Name: CAG');
+  })
   
     return conn;
   }
